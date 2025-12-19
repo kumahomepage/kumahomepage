@@ -1,3 +1,7 @@
+html, body {
+  overscroll-behavior: none;
+}
+
 body {
     font-family: Arial,
     "Noto Sans JP",
@@ -41,4 +45,5 @@ p {
         padding-bottom: 15px;
     }
 }
+
 
