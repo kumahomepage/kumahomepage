@@ -1,0 +1,84 @@
+header {
+    border-bottom: 2px solid #910000;
+    background-color: white;
+    padding: 15px 0 7px;
+    margin: 0 15px;
+    position: sticky;
+    top: 0;
+    width: calc(100% - 30px);
+    max-width: 950px;
+}
+
+header .title-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.kuma-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.kuma-char {
+    font-size: 45px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    line-height: 0.9;
+}
+
+.kuma-char::selection {
+    color: #b30000;
+    background-color: black;
+}
+
+.kuma-char .red {
+    color: #b30000;
+}
+
+.kuma-char .red::selection {
+    color: white;
+}
+
+.kuma-japanese {
+    font-family: "Shippori Mincho", serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.kuma-japanese::selection {
+    color: white;
+    background-color: black;
+}
+
+.kuma-japanese .red::selection {
+    color: #b30000;
+}
+
+@media (min-aspect-ratio: 1/1) {
+    header {
+        display: flex;
+    }
+    header .title-group {
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+    .header-group {
+        justify-content: flex-start;
+    }
+    .kuma-japanese {
+        padding-left: 10px;
+    }
+}

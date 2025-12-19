@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>京都大学KUMA-{{ title }}</title>
+        <link rel="stylesheet" href="/magickuma/static/css/index.css">
+        <link rel="stylesheet" href="/magickuma/static/css/header.css">
+        <link rel="stylesheet" href="/magickuma/static/css/menu.css">
+        <link rel="stylesheet" href="/magickuma/static/css/request.css">
+        <link rel="stylesheet" href="/magickuma/static/css/festival.css">
+        <link rel="stylesheet" href="/magickuma/static/css/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap">
+        <link rel="icon" href="/magickuma/favicon.ico?v=1" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <section class="title-group">
+                <div class="header-group">
+                    <img class="kuma-icon" src="/magickuma/static/images/kumaicon.jpg" alt="KUMAアイコン">
+                    <span class="kuma-char">KU<span class="red">M</span>A</span>
+                    <nav id="menu">
+                        <span></span><span></span><span></span>
+                    </nav>
+                </div>
+                <span class="kuma-japanese">京都大学<span class="red">奇術</span>研究会</span>
+            </section>
+            <ul class="wide-menu">
+                <li class="{% if page.url == '/' %}active{% endif %}">
+                    <a href="/magickuma/">トップ</a>
+                </li>
+                <li class="{% if page.url == '/about/' %}active{% endif %}">
+                    <a href="/magickuma/about/">サークル紹介</a>
+                </li>
+                <li class="{% if page.url == '/festival/' %}active{% endif %}">
+                    <a href="/magickuma/festival/">マジックキャッスル(NF)</a>
+                </li>
+                <li class="{% if page.url == '/request/' %}active{% endif %}">
+                    <a href="/magickuma/request/">出演依頼</a>
+                </li>
+                <li>
+                    <a class="logo" href="https://x.com/kyodai_magic" target="_blank" rel="noopener noreferrer">
+                        <img class="logo" src="/magickuma/static/images/x_logo_black.svg" alt="X">
+                    </a>
+                </li>
+                <li>
+                    <a class="logo" href="https://www.instagram.com/kuma_kyodaimagic/" target="_blank" rel="noopener noreferrer">
+                        <img class="logo" src="/magickuma/static/images/instagram_logo_black.svg" alt="Instagram">
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <section id="menu-section">
+            <ul>
+                <li class="{% if page.url == '/' %}active{% endif %}">
+                    <a href="/magickuma/">トップ</a>
+                </li>
+                <li class="{% if page.url == '/about/' %}active{% endif %}">
+                    <a href="/magickuma/about/">サークル紹介</a>
+                </li>
+                <li class="{% if page.url == '/festival/' %}active{% endif %}">
+                    <a href="/magickuma/festival/">マジックキャッスル(NF)</a>
+                </li>
+                <li class="{% if page.url == '/request/' %}active{% endif %}">
+                    <a href="/magickuma/request/">出演依頼</a>
+                </li>
+            </ul>
+        </section>
+
+        <main>
+            {{ content | safe }}
+        </main>
+        
+        <footer class="phone">
+            <div class="logo-group">
+                <a href="https://x.com/kyodai_magic" target="_blank" rel="noopener noreferrer">
+                    <img class="logo" src="/magickuma/static/images/x_logo_white.svg" alt="X">
+                </a>
+                <a href="https://www.instagram.com/kuma_kyodaimagic/" target="_blank" rel="noopener noreferrer">
+                    <img class="logo" src="/magickuma/static/images/instagram_logo_white.svg" alt="Instagram">
+                </a>
+            </div>
+            <span class="copyright">
+                &copy; 2025 KUMA
+            </span>
+            <div class="logo-group"></div>
+        </footer>
+        <footer class="pc">&copy; 2025 KUMA</footer>
+        
+        <script src="/magickuma/static/js/menu.js"></script>
+    </body>
+</html>
