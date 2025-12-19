@@ -55,7 +55,7 @@
     flex-direction: column;
     transition: 0.3s;
     position: fixed;
-    top: 106px;
+    top: 95px;
     right: 15px;
     background-color: #910000e9;
     color: white;
@@ -149,3 +149,4 @@
     }
 
 }
+
